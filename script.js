@@ -8,7 +8,7 @@ let count = 0;
 function update(val = 0) {
   count = val === "reset" ? 0 : count + val;
   countNum.innerHTML = count;
-  countNum.style.color = count > 0 ? "green" : count < 0 ? "red" : "black";
+  countNum.style.color = count > 0 ? "green" : count < 0 ? "red" : "gray";
 }
 
 increaseBtn.addEventListener("click", () => update(1));
